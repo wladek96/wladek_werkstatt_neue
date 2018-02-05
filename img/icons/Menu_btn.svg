@@ -1,0 +1,22 @@
+<svg width="40" height="24" viewBox="0 0 40 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Menu_btn</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-2301 -306)">
+<g id="Menu_btn">
+<g id="Rectangle 2">
+<use xlink:href="#path0_fill" transform="translate(2301 306)" fill="#FFFFFF"/>
+</g>
+<g id="Rectangle 2.1">
+<use xlink:href="#path1_fill" transform="translate(2301 316)" fill="#FFFFFF"/>
+</g>
+<g id="Rectangle 2.2">
+<use xlink:href="#path2_fill" transform="translate(2301 326)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 25 0L 25 4L 0 4L 0 0Z"/>
+<path id="path1_fill" d="M 0 0L 40 0L 40 4L 0 4L 0 0Z"/>
+<path id="path2_fill" d="M 0 0L 15 0L 15 4L 0 4L 0 0Z"/>
+</defs>
+</svg>

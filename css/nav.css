@@ -1,0 +1,107 @@
+/*
+ * Body and Main styles
+ * ----------------------
+ * Styles under "Body and Main styles"
+ * are not important for full-screen
+ * navigation and it's functionalities.
+ * */
+:focus {
+  outline: none; }
+
+.main-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center; }
+  .main-nav li {
+    margin: 0 0 6rem 0; }
+    .main-nav li a {
+      width: 21.25rem;
+      height: 6rem;
+      margin-top: 5rem;
+      text-transform: uppercase;
+      -ms-touch-action: manipulation;
+      touch-action: manipulation;
+      cursor: pointer;
+      border-radius: 0;
+      line-height: 3rem;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      background-color: white;
+      -webkit-transition: all .3s ease 0s;
+      -o-transition: all .3s ease 0s;
+      transition: all .3s ease 0s;
+      padding: 0.65em 2.5em;
+      color: #040404;
+      text-decoration: none;
+      font-size: 2.25rem;
+      font-weight: bold;
+      text-align: center;
+      letter-spacing: 0.05em; }
+
+.active-page {
+  opacity: 0.4; }
+  .active-page:hover {
+    cursor: default; }
+
+/*
+ * Full menu
+ * ----------
+ * Styles in this section are very
+ * important and you have to implement
+ * them if you want for your
+ * navigation to work properly.
+ * */
+.full-menu {
+  z-index: 10;
+  visibility: hidden;
+  display: table;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0;
+  background-color: rgba(4, 4, 4, 0.92);
+  -webkit-transform: scale(0.85);
+  -ms-transform: scale(0.85);
+  transform: scale(0.85);
+  -webkit-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out; }
+
+.full-menu--open {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1); }
+
+.full-menu--transition {
+  -webkit-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out; }
+
+.full-menu--middle {
+  display: table-cell;
+  vertical-align: middle; }
+
+.menu-toggle {
+  border: 0;
+  color: white;
+  background-color: transparent;
+  -webkit-transition: all 0.75s ease;
+  -o-transition: all 0.75s ease;
+  transition: all 0.75s ease; }
+
+.menu-toggle--close {
+  position: absolute;
+  top: 30px;
+  right: 30px; }
+  .menu-toggle--close:before {
+    content: '\f00d';
+    color: white;
+    font-size: 40px;
+    margin: 0; }

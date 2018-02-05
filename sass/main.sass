@@ -1,0 +1,388 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after
+  animation-play-state: paused !important
+  pointer-events: none !important
+
+.loading
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  color: #aaa
+  font-size: 48px
+  display: none
+
+.js-loading .loading
+  display: block
+
+.grid
+  display: grid
+
+body
+  background-color: $main
+
+// Navbar
+.navbar
+  z-index: 15
+  position: fixed
+  height: 13rem
+  width: 100%
+  bottom: 0
+
+.navbody
+  position: absolute
+  height: 7rem
+  left: 3rem
+  right: 3rem
+  top: 3rem
+  background: $main
+  box-shadow: 0 0 3rem $main
+
+.mnu-btn
+  position: absolute
+  width: 5rem
+  height: 3rem
+  right: 3rem
+  top: 50%
+  margin-top: -1.5rem
+
+.mnu-logo
+  position: absolute
+  width: 5rem
+  height: 3rem
+  left: 3rem
+  top: 50%
+  margin-top: -1.5rem
+
+// Separator
+
+.separator
+  position: absolute
+  height: 2rem
+  left: 3rem
+  right: 3rem
+  top: 3rem
+
+.topic
+  display: inline-block
+  position: absolute
+  left: 17.49%
+  line-height: 1
+  margin-top: 0
+  font-size: 1.75rem
+  letter-spacing: 0.2em
+  font-weight: 700
+
+.hr-line
+  display: block
+  width: 10vw
+  height: 0.5rem
+  position: absolute
+  left: 0
+  margin-top: 0.45rem
+
+.page-count
+  font-size: 1.75rem
+  display: inline-block
+  position: absolute
+  right: 0%
+  line-height: 1
+  text-align: right
+  margin-top: 0
+
+// Section 1 My Photo
+
+.me-photo
+  z-index: -1
+  position: absolute
+  width: 100%
+  height: 62.5rem
+  background: url(../img/Me_3.png)
+  background-repeat: no-repeat
+  background-size: 62.5rem
+  background-position: -6rem 0
+
+.me-section-1
+  position: relative
+  grid-template-columns: repeat( auto-fit, minmax(272px, 1fr) )
+  top: 49rem
+
+.dwnl-box
+  grid-column: 1
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-direction: row
+  width: 100%
+  height: 6rem
+
+.dwnl-btn
+  text-transform: uppercase
+  flex-grow: 2
+  touch-action: manipulation
+  cursor: pointer
+  border-radius: 0
+  line-height: 1
+  user-select: none
+  background-color: $accent
+  transition: all .3s ease 0s
+  padding: 1.5em 5%
+  color: $main
+  box-shadow: $glow
+  text-decoration: none
+  font-size: 1.5rem
+  font-weight: bold
+  text-align: center
+  letter-spacing: 0.05em
+
+.dwnl-ico
+  z-index: 1
+  width: 4.7rem
+  margin-left: 5%
+  margin-right: 5%
+  fill: white
+
+.dwnl-txt
+  flex-grow: 1
+  font-style: italic
+  font-weight: regular
+  line-height: 21px
+  font-size: 1.5rem
+
+.dwnl-slash
+  right: 0
+  width: 0.5rem
+  height: inherit
+  background-color: $accent
+  box-shadow: $glow
+  margin-left: 0
+
+.credits
+  grid-column: 1
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-direction: row
+  width: 100%
+  height: 8rem
+  margin-top: 8rem
+
+.prof
+  flex-grow: 1
+  font-style: italic
+  font-weight: normal
+  line-height: normal
+  font-size: 1.25rem
+
+.credits-slash
+  width: 0.5rem
+  height: inherit
+  background-color: white
+
+.name-block
+  flex-grow: 1
+
+.first-name
+  font-size: 7rem
+  text-transform: uppercase
+  line-height: 0
+  text-align: right
+
+
+.sec-name
+  font-size: 1.75rem
+  line-height: 0
+  text-align: right
+  font-weight: normal
+  letter-spacing: 0.05em
+
+// Section-2
+
+.about-section-2
+  margin-top: 8rem
+  background-color: white
+  padding-bottom: 5rem
+
+.separator-2
+  position: relative
+  height: 2rem
+  margin-top: 3rem
+
+.about-head
+  margin-top: 3rem
+
+.skills-ls
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-direction: row
+
+.border-slash
+  width: 0.5rem
+  height: 5rem
+
+.skill
+  height: 6rem
+  width: 6rem
+  background-color: $main
+  color: white
+  padding: 1.5rem 0
+  border-radius: 50%
+  font-size: 1.25rem
+  text-align: center
+
+.skill2
+  line-height: 1.75rem
+  font-size: 1.5rem
+  text-align: center
+
+.xp-section-3
+  grid-column: 1
+
+.last-jobs
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-direction: row
+  margin-top: 5rem
+
+.resp
+  font-style: normal
+  font-weight: normal
+  line-height: normal
+  font-size: 1.25rem
+  letter-spacing: 0.05em
+
+.sub
+  // line-height: 0
+  margin-bottom: 0
+
+.logotypes
+  width: 15rem
+  height: 10rem
+
+.logotypes-cont
+
+
+.jobs-slash
+  width: 0.5rem
+  height: inherit
+  background-color: $accent
+
+.separ
+  width: 10vw
+  height: 0.5rem
+  margin-top: 3rem
+  margin-bottom: 3rem
+
+.border-slash-2
+  width: 0.5rem
+  height: 0.5rem
+
+.learn-more
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-direction: row
+
+.more-btn-cont
+  width: 21.25rem
+  height: 6rem
+
+.more-btn
+  width: 21.25rem
+  height: 6rem
+  margin-top: 5rem
+  text-transform: uppercase
+  touch-action: manipulation
+  cursor: pointer
+  border-radius: 0
+  line-height: 1
+  user-select: none
+  background-color: white
+  transition: all .3s ease 0s
+  padding: 0.65em 3.2em
+  color: $main
+  text-decoration: none
+  font-size: 2.25rem
+  font-weight: bold
+  text-align: center
+  letter-spacing: 0.05em
+
+.jobs-slash-2
+  width: 0.5rem
+  height: 22rem
+
+.jobs-slash-2
+  width: 0.5rem
+  height: 10rem
+
+.contacts-cont
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-direction: row
+  margin-top: 3rem
+  margin-bottom: 3rem
+
+
+.contacts
+  margin-top: 3rem
+
+.contacts-item
+  display: inline-block
+  font-size: 1.75rem
+  line-height: 1.3
+
+.socicon
+  color: white
+  font-size: 4rem
+  text-decoration: none
+
+.copyright
+  margin-left: 3rem
+  font-size: 1.25rem
+  color: white
+  line-height: 5
+  margin-bottom: 17rem
+
+.transform-active-middle
+  opacity: 0
+  transition: all 0.25s ease
+
+.transform-active-top
+  transform: rotate(30deg)
+  transition: all 0.75s ease
+
+.transform-active-bottom
+  transform: rotate(-30deg)
+  transition: all 0.75s ease
+
+.rect-top
+  transform-origin: 0% 0%
+  transition: all 0.75s ease
+
+.rect-middle
+  transition: all 0.75s ease
+
+.rect-bottom
+  transform-origin: 0% 0%
+  transition: all 0.75s ease
+
+#lottie
+  width: 320px
+  display: block
+  overflow: hidden
+  transform: translate3d(0,0,0)
+  opacity: 1
+  z-index: -1
+
+
+
+@import "media" // Всегда в конце

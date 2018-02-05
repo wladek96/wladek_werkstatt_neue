@@ -1,0 +1,22 @@
+<svg width="111" height="134" viewBox="0 0 111 134" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Logo_min</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-1287 -1791)">
+<g id="Logo_min">
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="translate(1320.88 1791)" fill="#FF003A"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="translate(1321.44 1809.93)" fill="#FFFFFF"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path2_fill" transform="translate(1287 1844.89)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 19.461 52.4348L 19.461 53.8913L 0 53.8913L 0 51.7065L 12.2532 50.9782L 12.974 49.5217L 19.461 52.4348ZM 27.3896 21.8478L 10.0909 26.9456L 2.16234 4.36956L 8.64935 0L 27.3896 21.8478Z"/>
+<path id="path1_fill" d="M 2.32251 30.5869L 0.160173 31.3152C 0.160173 28.4022 -1.28139 10.1956 4.48485 0L 5.20563 2.18478C 0.880952 12.3804 1.60173 28.4022 2.32251 30.5869Z"/>
+<path id="path2_fill" d="M 111 0L 111 16.75L 92.9805 16.75L 92.9805 80.1087L 72.7987 80.1087L 72.7987 16.75L 37.4805 16.75L 37.4805 80.1087L 18.0195 80.1087L 18.0195 16.75L 0 16.75L 0 0L 111 0Z"/>
+</defs>
+</svg>
