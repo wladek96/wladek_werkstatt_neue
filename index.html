@@ -51,29 +51,14 @@
 	<header class="navbar">
 		<div class="navbody">
 			<a href="#" class="mnu-logo"><img src="img/icons/WW_logo_white_full.svg" alt=""></a>
-			<div class="menu-toggle mnu-btn"><svg width="40" height="24" viewBox="0 0 40 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-			<title>Menu_btn</title>
-			<desc>Created using Figma</desc>
-			<g id="Canvas" transform="translate(-2301 -306)">
-			<g id="Menu_btn">
-			<g id="Rectangle 2" class="rect-top">
-			<use xlink:href="#path0_fill" transform="translate(2301 306)" fill="#FFFFFF"/>
-			</g>
-			<g id="Rectangle 2.1" class="rect-middle">
-			<use xlink:href="#path1_fill" transform="translate(2301 316)" fill="#FFFFFF"/>
-			</g>
-			<g id="Rectangle 2.2" class="rect-bottom">
-			<use xlink:href="#path2_fill" transform="translate(2301 326)" fill="#FFFFFF"/>
-			</g>
-			</g>
-			</g>
-			<defs>
-			<path id="path0_fill" d="M 0 0L 40 0L 40 4L 0 4L 0 0Z"/>
-			<path id="path1_fill" d="M 0 0L 40 0L 40 4L 0 4L 0 0Z"/>
-			<path id="path2_fill" d="M 0 0L 40 0L 40 4L 0 4L 0 0Z"/>
-			</defs>
-			</svg></div>
-			<!-- <button class="menu-toggle mnu-btn"></button> -->
+			<div class="menu-toggle mnu-btn">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
 		</div>
 	</header>
 	<div id="barba-wrapper">
@@ -81,16 +66,19 @@
 
 			<!-- Menu -->
 			<div class="full-menu">
-  <div class="full-menu--middle">
+				<div class="full-menu--middle">
 
-    <ul class="main-nav">
-      <li><a class="active-page">Liakh Vladyslav</a></li>
-      <li><a href="#">Wladek Werkstatt ™</a></li>
-      <li><a href="#">PORTFOLIO</a></li>
-      <li><a href="#">CONTACTS</a></li>
-    </ul><!-- /.main nav -->
-  </div><!-- /.full menu middle -->
-</div><!-- /.full menu -->
+					<ul class="main-nav">
+						<li><a class="active-page link-btn">Liakh Vladyslav</a></li>
+						<li><a href="ww.html" class="link-btn">Wladek Werkstatt ™</a></li>
+						<li><a href="portfolio.html" class="link-btn">PORTFOLIO</a></li>
+						<li><a href="contacts.html" class="link-btn">CONTACTS</a></li>
+					</ul>
+					<!-- /.main nav -->
+				</div>
+				<!-- /.full menu middle -->
+			</div>
+			<!-- /.full menu -->
 			<!-- Separator line -->
 
 			<div class="separator">
@@ -440,5 +428,6 @@
 <script type="text/javascript">
 	Barba.Pjax.start();
 </script>
+<script src="js/barb.anim.js" charset="utf-8"></script>
 
 </html>

@@ -60,7 +60,8 @@
   height: 100vh
   width: 100vw
   opacity: 0
-  background-color: rgba(4, 4, 4, 0.90)
+  border-radius: 100%
+  background-color: rgba(4, 4, 4, 0.95)
   -webkit-transform: scale(0.85)
   -ms-transform: scale(0.85)
   transform: scale(0.85)
@@ -68,6 +69,7 @@
   transition: all 200ms ease-in-out
 
 .full-menu--open
+  border-radius: 0
   visibility: visible
   opacity: 1
   -webkit-transform: scale(1)
@@ -75,8 +77,8 @@
   transform: scale(1)
 
 .full-menu--transition
-  -webkit-transition: all 200ms ease-in-out
-  transition: all 200ms ease-in-out
+  -webkit-transition: all 500ms ease-in-out
+  transition: all 500ms ease-in-out
 
 .full-menu--middle
   display: table-cell
@@ -86,18 +88,3 @@
   border: 0
   color: white
   background-color: transparent
-  transition: all 0.75s ease
-  // &:before
-  //   content: '\f0c9'
-  //   font-family: 'FontAwesome'
-  //   margin: 0 20px 0 0
-
-.menu-toggle--close
-  position: absolute
-  top: 30px
-  right: 30px
-  &:before
-    content: '\f00d'
-    color: white
-    font-size: 40px
-    margin: 0

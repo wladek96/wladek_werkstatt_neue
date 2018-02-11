@@ -1,15 +1,15 @@
-$('.menu-toggle').on('click', function(){
+$('.menu-toggle').on('click', function() {
   $('.full-menu').toggleClass('full-menu--open');
 })
 
-$('.menu-toggle').click(function() {
-  $('.rect-top').toggleClass('transform-active-top');
+$(document).ready(function() {
+  $('.menu-toggle').click(function() {
+    $(this).toggleClass('open');
+  });
 });
 
-$('.menu-toggle').click(function() {
-  $('.rect-middle').toggleClass('transform-active-middle');
-});
-
-$('.menu-toggle').click(function() {
-  $('.rect-bottom').toggleClass('transform-active-bottom');
+$(document).ready(function() {
+  $('.link-btn').on('click', function() {
+    $('.menu-toggle').toggleClass('open');
+  });
 });
