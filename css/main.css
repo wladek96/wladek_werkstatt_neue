@@ -531,8 +531,7 @@ li {
 .js-loading *:before,
 .js-loading *:after {
   -webkit-animation-play-state: paused !important;
-  animation-play-state: paused !important;
-  pointer-events: none !important; }
+  animation-play-state: paused !important; }
 
 .loading {
   z-index: 100;
