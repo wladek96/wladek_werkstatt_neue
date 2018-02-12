@@ -12,19 +12,27 @@
 .loading
   z-index: 100
   position: absolute
-  text-align: center
   margin: auto
-  transform: translate(-50%, -50%)
-  color: $accent
-  font-size: 48px
+  align-items: center
+  // transform: translate(-50%, -50%)
   display: none
   width: 100vw
   height: 100vh
+  background-image: url(../img/SMPTE_Color_Bars.svg)
+  background-size: cover
+  background-position: center
+  // transition: all .3s ease 0s
+
+.sb
+  position: relative
+  margin: auto
+  align-content: center
   background-color: $main
-  transition: all .3s ease 0s
+  color: white
+  text-align: center
 
 .js-loading .loading
-  display: block
+  display: flex
 
 .grid
   display: grid
@@ -39,6 +47,7 @@ body
   height: 13rem
   width: 100%
   bottom: 0
+  // background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%)
 
 .navbody
   position: absolute
@@ -56,6 +65,7 @@ body
   right: 3rem
   top: 50%
   margin-top: -1.5rem
+  cursor: pointer
 
 .mnu-logo
   position: absolute
@@ -112,6 +122,16 @@ body
   background-repeat: no-repeat
   background-size: 62.5rem
   background-position: -6rem 0
+  &::after
+    content: ''
+    position: absolute
+    width: 100%
+    height: 62.5rem
+    background: url(../img/Me_3_stroke-min.png)
+    background-repeat: no-repeat
+    background-size: 62.5rem
+    background-position: -6rem 0
+
 
 .me-section-1
   position: relative
@@ -145,6 +165,14 @@ body
   font-weight: bold
   text-align: center
   letter-spacing: 0.05em
+  &:hover
+    box-sizing: border-box
+    background-color: transparent
+    border: 1px solid white
+    color: white
+    box-shadow: none
+
+
 
 .dwnl-ico
   z-index: 1
@@ -243,9 +271,13 @@ body
   text-align: center
 
 .skill2
+  width: 6rem
   line-height: 1.75rem
   font-size: 1.5rem
   text-align: center
+
+.skill-sep
+  margin-top: 5rem
 
 .xp-section-3
   grid-column: 1
@@ -319,6 +351,14 @@ body
   font-weight: bold
   text-align: center
   letter-spacing: 0.05em
+  &:hover
+    box-sizing: border-box
+    transform: scale(.95, .95)
+    background-color: transparent
+    border: 1px solid white
+    color: white
+    box-shadow: none
+
 
 .jobs-slash-2
   width: 0.5rem
@@ -344,11 +384,19 @@ body
   display: inline-block
   font-size: 1.75rem
   line-height: 1.3
+  transition: all .25s
+  &:hover
+    letter-spacing: 0.2em
+    color: $accent
 
 .socicon
   color: white
   font-size: 4rem
   text-decoration: none
+  transition: all .15s
+  &:hover
+    color: $accent
+    transform: scale(1.5, 1.5)
 
 .copyright
   margin-left: 3rem
@@ -378,10 +426,8 @@ body
     transition: .25s ease-in-out
     &:nth-child(even)
       left: 50%
-      border-radius: 0 1rem 1rem 0
     &:nth-child(odd)
       left: 0px
-      border-radius: 1rem 0 0 1rem
     &:nth-child(1), &:nth-child(2)
       top: 0px
     &:nth-child(3), &:nth-child(4)
@@ -433,6 +479,7 @@ body
 
 .st5
   fill: $accent
+
 
 .map-section-1
   z-index: 2
@@ -520,6 +567,7 @@ body
   background-image: url(../img/ww-bg.png)
   background-position: center
   background-size: cover
+  overflow: hidden
 
 .main-modo
   display: block
@@ -545,5 +593,109 @@ body
   background-image: url(../img/MockUp.jpg)
   background-position: center
   background-size: cover
+
+// SKILLS list
+
+.s1
+  background-image: url(../img/icons/skills/ps.svg)
+  background-position: center
+  background-size: 75%
+
+.s2
+  background-image: url(../img/icons/skills/ai.svg)
+  background-position: center
+  background-size: 75%
+
+.s3
+  background-image: url(../img/icons/skills/ae.svg)
+  background-position: center
+  background-size: 75%
+
+.s4
+  background-image: url(../img/icons/skills/pr.svg)
+  background-position: center
+  background-size: 75%
+
+.s5
+  background-image: url(../img/icons/skills/gravit.svg)
+  background-position: center
+  background-size: 50%
+  background-repeat: no-repeat
+
+.s6
+  background-image: url(../img/icons/skills/figma.svg)
+  background-position: center
+  background-size: 100%
+
+.s7
+  background-image: url(../img/icons/skills/xd.svg)
+  background-position: center
+  background-size: 75%
+
+.s8
+  background-image: url(../img/icons/skills/au.svg)
+  background-position: center
+  background-size: 75%
+
+.s9
+  background-image: url(../img/icons/skills/html.svg)
+  background-position: center
+  background-size: 100%
+  background-repeat: no-repeat
+
+.s10
+  background-image: url(../img/icons/skills/css.svg)
+  background-position: center
+  background-size: 100%
+
+.s11
+  background-image: url(../img/icons/skills/bs.svg)
+  background-position: center
+  background-size: 100%
+
+.s12
+  background-image: url(../img/icons/skills/git.svg)
+  background-position: center
+  background-size: 75%
+  background-repeat: no-repeat
+
+.s13
+  background-image: url(../img/icons/skills/md.svg)
+  background-position: center
+  background-size: 100%
+
+.s14
+  background-image: url(../img/icons/skills/ios.svg)
+  background-position: center
+  background-size: 100%
+
+.s15
+  background-image: url(../img/icons/skills/fd.svg)
+  background-position: center
+  background-size: 100%
+
+.s16
+  background-image: url(../img/icons/skills/en.svg)
+  background-position: center
+  background-size: 50%
+  background-repeat: no-repeat
+
+.s17
+  background-image: url(../img/icons/skills/fr.svg)
+  background-position: center
+  background-size: 50%
+  background-repeat: no-repeat
+
+.s18
+  background-image: url(../img/icons/skills/ua.svg)
+  background-position: center
+  background-size: 50%
+  background-repeat: no-repeat
+
+.s19
+  background-image: url(../img/icons/skills/ru.svg)
+  background-position: center
+  background-size: 50%
+  background-repeat: no-repeat
 
 @import "media" // Всегда в конце
