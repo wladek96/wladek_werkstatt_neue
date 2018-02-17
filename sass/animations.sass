@@ -14,6 +14,14 @@
   0%, 4%, 8%
     opacity: 0
 
+@keyframes appear
+  0%
+    transform: scale(0.9)
+    opacity: 0
+  100%
+    transform: scale(1)
+    opacity: 1
+
 @keyframes flickerCol
   2%, 6%, 10%, 100%
     fill: #FF003A
@@ -30,6 +38,6 @@
 //   animation: 2s infinite 1s bounce
 
 .me-photo
-  animation: 4s infinite .5s both flicker
+  animation: 4s ease both appear
   &::after
-    animation: 4s infinite .8s both flicker
+    animation: 4s infinite 2s both flicker

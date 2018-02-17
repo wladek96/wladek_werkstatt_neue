@@ -32,6 +32,26 @@
   0%, 4%, 8% {
     opacity: 0; } }
 
+@-webkit-keyframes appear {
+  0% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+
+@keyframes appear {
+  0% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+
 @-webkit-keyframes flickerCol {
   2%, 6%, 10%, 100% {
     fill: #FF003A; }
@@ -53,8 +73,8 @@
   animation: 4s linear .5s both flickerCol, 2s infinite 1s bounce; }
 
 .me-photo {
-  -webkit-animation: 4s infinite .5s both flicker;
-  animation: 4s infinite .5s both flicker; }
+  -webkit-animation: 4s ease both appear;
+  animation: 4s ease both appear; }
   .me-photo::after {
-    -webkit-animation: 4s infinite .8s both flicker;
-    animation: 4s infinite .8s both flicker; }
+    -webkit-animation: 4s infinite 2s both flicker;
+    animation: 4s infinite 2s both flicker; }
