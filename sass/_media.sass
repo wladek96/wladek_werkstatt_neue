@@ -59,12 +59,15 @@
 
 	.mg
     margin: 0 5rem
-
+	.mnu-logo
+		margin-top: -1rem
 	.dwnl-cred
+		margin-top: 5rem
 		display: flex
 		flex-direction: column-reverse
-		grid-row: 1
+		grid-row: 9
 		grid-column: 2
+		order: 4
 
 		.dwnl-btn
 			z-index: 2
@@ -85,9 +88,12 @@
 
 	.me-photo
 		height: 65rem
-		z-index: 1
+		z-index: 105
+		pointer-events: none
 		background-size: 65rem
 		background-position: -5rem 0
+		filter: drop-shadow(0px 2.5rem 2.5rem black)
+		box
 		&::after
 			background-size: 65rem
 			background-position: -5rem 0
@@ -102,20 +108,23 @@
 		top: 15vh
 
 	.me-section-1
-		top: 11rem
+		top: -15rem
 
 	.about-section-2
-		grid-row: 2 / 4
+		grid-row: 7 / 9
 		grid-column: 2
 		top: 11rem
+		order: 3
 
 	.skills-section-4
-		grid-row: 4 / 6
+		grid-row: 6 / 7
 		grid-column: 2
 		top: 11rem
 		margin-top: 0
+		order: 2
 
 	.xp-section-3
+		margin-top: 85rem
 		grid-column: 1
 		grid-row: 3 / 7
 
@@ -124,12 +133,13 @@
 
 	.cont-section-5
 		grid-column: 2
-		grid-row: 6 / 8
+		grid-row: 5 / 6
 		margin-bottom: 17rem
+		order: 1
 
 	.cont-section-6
 		grid-column: 1
-		grid-row: 7 / 8
+		grid-row: 7 / 9
 
 	#lottie
 		width: 80vw
@@ -152,6 +162,11 @@
 		margin-right: 5rem
 		margin-left: 17.5rem
 
+	.tr-right
+		position: relative
+		top: -235vh
+
+
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 1024px)
 	\:root
@@ -167,7 +182,7 @@
 
 		.navbody
 			height: 5rem
-			top: 1.5rem
+			top: 3rem
 
 		.nav-menu
 				position: absolute
@@ -201,42 +216,55 @@
 									color: #FF003A
 									text-shadow: 0px 4px 100px rgba(255, 0, 58, 0.5)
 
-		.active-page
-			color: #FF003A
+		.tr-right
+			top: -300rem
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1440px)
+@media only screen and (min-width : 1366px)
 	\:root
 		font-size: 11px
 
-	.grid
-		grid-column-gap: 5rem
-		grid-template-columns: 1fr 1fr
+		.grid
+			grid-column-gap: 5rem
+			grid-template-columns: 1fr 1fr
 
-	.nav-menu
-		width: 55vw
+		.nav-menu
+			width: 55vw
 
-	.me-photo
-		height: 90rem
-		width: 90rem
-		background-size: cover
-		background-position: -5rem 0
-		&::after
+		.dwnl-cred
+			grid-row: 6
+
+		.about-section-2
+			grid-row: 5 / 6
+
+		.skills-section-4
+			grid-row: 4 / 5
+
+		.cont-section-5
+			grid-row: 3 / 4
+
+		.me-photo
 			height: 90rem
 			width: 90rem
 			background-size: cover
 			background-position: -5rem 0
+			&::after
+				height: 90rem
+				width: 90rem
+				background-size: cover
+				background-position: -5rem 0
 
-	.xp-section-3
-		grid-column: 1
-		grid-row: 4 / 9
+		.xp-section-3
+			margin-top: 35rem
+			grid-column: 1
+			grid-row: 4 / 8
 
-	.cont-section-6
-		grid-column: 1 / 2
-		grid-row: 8
+		.cont-section-6
+			grid-column: 1 / 2
+			grid-row: 10
 
-	.cont-section-5
-		margin-bottom: auto
+		.tr-right
+			top: -235vh
 
 @media only screen and (min-width : 2560px)
 	\:root

@@ -49,6 +49,7 @@ body
   bottom: 0
 
 .navbody
+  outline: solid white 0.5rem
   position: absolute
   height: 7rem
   left: 3rem
@@ -161,7 +162,6 @@ body
   flex-grow: 2
   touch-action: manipulation
   cursor: pointer
-  border-radius: 0
   line-height: 1
   user-select: none
   background-color: $accent
@@ -177,7 +177,7 @@ body
   &:hover
     box-sizing: border-box
     background-color: transparent
-    border: 0.125rem solid white
+    outline: 0.125rem solid white
     color: white
     box-shadow: none
 
@@ -357,7 +357,6 @@ body
   text-transform: uppercase
   touch-action: manipulation
   cursor: pointer
-  border-radius: 0
   line-height: 1
   user-select: none
   background-color: white
@@ -373,7 +372,7 @@ body
     box-sizing: border-box
     transform: scale(.95, .95)
     background-color: transparent
-    border: 0.125rem solid white
+    outline: 0.125rem solid white
     color: white
     box-shadow: none
 
