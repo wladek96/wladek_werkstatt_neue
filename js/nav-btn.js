@@ -6,6 +6,19 @@ $('.menu-toggle').click(function() {
   $(this).toggleClass('open');
 })
 
+$('.link-btn').on('click', function() {
+  $('.menu-toggle').toggleClass('open');
+});
+
+  var scrollTop = $(".scrollTopBtn");
+
+  $(scrollTop).click(function(e) {
+    e.preventDefault();
+    $('html, body').animate({
+      scrollTop: 0
+    }, 800);
+  });
+
 $('#btn1').click(function(e) {
   e.preventDefault();
   $(this).toggleClass('active-page').delay(800);
@@ -39,8 +52,8 @@ $('#btn4').click(function(e) {
 })
 
 $(document).ready(function() {
-    $(window).scroll(function() {
-      if (window.matchMedia('(min-width: 768px)').matches) {
+  $(window).scroll(function() {
+    if (window.matchMedia('(min-width: 768px)').matches) {
       $('.right').css('transform', 'translate3d(0,' + $(this).scrollTop() * 2 + 'px, 0)');
     }
   }).scroll();

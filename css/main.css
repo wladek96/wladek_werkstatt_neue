@@ -457,7 +457,7 @@ html, body {
   height: 100%; }
 
 body::-webkit-scrollbar {
-  width: 1em; }
+  width: 0; }
 
 body {
   min-width: 320px;
@@ -726,7 +726,7 @@ body {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     background-color: transparent;
-    outline: 0.125rem solid white;
+    outline: 0.5rem solid white;
     color: white;
     -webkit-box-shadow: none;
     box-shadow: none; }
@@ -871,6 +871,12 @@ body {
 .cont-section-6 {
   grid-column: 1; }
 
+.cont-ww-section-5 {
+  grid-column: 1; }
+
+.cont-ww-section-6 {
+  grid-column: 1; }
+
 .last-jobs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -966,7 +972,7 @@ body {
     -ms-transform: scale(0.95, 0.95);
     transform: scale(0.95, 0.95);
     background-color: transparent;
-    outline: 0.125rem solid white;
+    outline: 0.5rem solid white;
     color: white;
     -webkit-box-shadow: none;
     box-shadow: none; }
@@ -1220,7 +1226,8 @@ body {
   background-image: url(../img/ww-bg.png);
   background-position: center;
   background-size: cover;
-  overflow: hidden; }
+  overflow: hidden;
+  background-attachment: fixed; }
 
 .main-modo {
   display: block;
@@ -1228,7 +1235,8 @@ body {
   width: 12rem;
   height: 15rem;
   left: 7rem;
-  padding-top: 10rem; }
+  padding-top: 10rem;
+  text-indent: -0.6em; }
 
 .annot-modo {
   position: static;
@@ -1245,7 +1253,8 @@ body {
   margin-top: 5rem;
   background-image: url(../img/MockUp.jpg);
   background-position: center;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
 .s1 {
   background-image: url(../img/icons/skills/ps.svg);
@@ -1440,7 +1449,7 @@ body {
     margin-left: 3rem;
     margin-right: 9rem;
     position: relative;
-    top: 12.5vh; }
+    top: 13rem; }
   .logo {
     top: 15vh; }
   .me-section-1 {
@@ -1627,6 +1636,36 @@ body {
         width: 105rem;
         background-size: cover;
         background-position: -5rem 0; }
+    :root .modo-cont {
+      width: 100vw;
+      height: 70vh; }
+    :root .main-modo {
+      grid-column: 1 / 2;
+      font-size: 7rem;
+      left: 10vw;
+      width: 30vw; }
+    :root .mockup {
+      height: 50vh;
+      width: 100vw; }
+    :root .learn-wrap {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+        justify-content-align-items: center;
+        justify-content-flex-direction: row; }
+    :root .learn-more {
+      width: 45vw; }
+    :root .contacts-cont {
+      width: 45vw; }
+    :root .cont-ww-section-5 {
+      margin-top: 8rem; }
+    :root .cont-ww-section-6 {
+      margin-top: 8rem; }
+    :root .annot-modo {
+      margin-left: 10vw; }
     :root .tr-right {
       top: -200rem; } }
 

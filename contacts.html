@@ -3,6 +3,20 @@
 
 <head>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114373883-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-114373883-1');
+  </script>
+
+
   <meta charset="utf-8">
 
   <title>Wladek Werkstatt: Resume</title>
@@ -14,18 +28,6 @@
   <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114216932-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-114216932-1');
-  </script>
   <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
@@ -75,31 +77,17 @@
         <span></span>
       </div>
       <ul class="nav-menu">
-        <li><a id="btn1" href="index.html" class="link-btn">Liakh Vladyslav</a></li>
-        <li><a id="btn2" href="ww.html" class="link-btn">Wladek Werkstatt ™</a></li>
-        <li><a id="btn3" href="portfolio.html" class="link-btn">PORTFOLIO</a></li>
-        <li><a id="btn4" href="contacts.html" class="active-page link-btn">CONTACTS</a></li>
+        <li><a id="btn1" href="index.html" class="link-btn scrollTopBtn">Liakh Vladyslav</a></li>
+        <li><a id="btn2" href="ww.html" class="link-btn scrollTopBtn">Wladek Werkstatt ™</a></li>
+        <li><a id="btn3" href="portfolio.html" class="link-btn scrollTopBtn">PORTFOLIO</a></li>
+        <li><a id="btn4" href="contacts.html" class="active-page link-btn scrollTopBtn">CONTACTS</a></li>
       </ul>
     </div>
   </header>
   <div id="barba-wrapper">
     <div class="barba-container" data-namespace="home">
 
-      <!-- Menu -->
-      <div class="full-menu">
-        <div class="full-menu--middle">
 
-          <ul class="main-nav">
-            <li><a href="index.html" class="link-btn">Liakh Vladyslav</a></li>
-            <li><a href="ww.html" class="link-btn">Wladek Werkstatt ™</a></li>
-            <li><a href="portfolio.html" class="link-btn">PORTFOLIO</a></li>
-            <li><a class="active-page link-btn">CONTACTS</a></li>
-          </ul>
-          <!-- /.main nav -->
-        </div>
-        <!-- /.full menu middle -->
-      </div>
-      <!-- /.full menu -->
       <!-- Separator line -->
 
       <div class="separator mg">
@@ -212,17 +200,31 @@
           <p class="copyright" style="margin-top: 5rem;">© 2018 Liakh Vladyslav. Some rights reserved.</p>
         </div>
       </div>
+      <!-- Menu -->
+      <div class="full-menu">
+        <div class="full-menu--middle">
 
+          <ul class="main-nav">
+            <li><a href="index.html" class="link-btn scrollTopBtn">Liakh Vladyslav</a></li>
+            <li><a href="ww.html" class="link-btn scrollTopBtn">Wladek Werkstatt ™</a></li>
+            <li><a href="portfolio.html" class="link-btn scrollTopBtn">PORTFOLIO</a></li>
+            <li><a class="active-page link-btn scrollTopBtn">CONTACTS</a></li>
+          </ul>
+          <!-- /.main nav -->
+        </div>
+        <!-- /.full menu middle -->
+      </div>
+      <!-- /.full menu -->
     </div>
   </div>
 </body>
 <link rel="stylesheet" href="/css/animations.css">
 <link rel="stylesheet" href="/css/nav.css">
 <script src="js/nav-btn.js" charset="utf-8"></script>
-<!-- <script src="js/barba.some.js" charset="utf-8"></script> -->
-<script type="text/javascript">
+<script src="js/barba.some.js" charset="utf-8"></script>
+<!-- <script type="text/javascript">
   Barba.Pjax.start();
-</script>
+</script> -->
 <script src="js/barb.anim.js" charset="utf-8"></script>
 <!-- <script type="text/javascript">
 	Barba.Pjax.getTransition = function() {

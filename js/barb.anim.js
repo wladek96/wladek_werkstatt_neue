@@ -1,3 +1,6 @@
+Barba.Pjax.start();
+Barba.Prefetch.init();
+
 var FadeTransition = Barba.BaseTransition.extend({
   start: function() {
     /**
@@ -17,7 +20,9 @@ var FadeTransition = Barba.BaseTransition.extend({
      * this.oldContainer is the HTMLElement of the old Container
      */
 
-    return $(this.oldContainer).animate({ opacity: 0 }).promise();
+    return $(this.oldContainer).animate({
+      opacity: 0
+    }).promise();
   },
 
   fadeIn: function() {
@@ -33,11 +38,13 @@ var FadeTransition = Barba.BaseTransition.extend({
     $(this.oldContainer).hide();
 
     $el.css({
-      visibility : 'visible',
-      opacity : 0
+      visibility: 'visible',
+      opacity: 0
     });
 
-    $el.animate({ opacity: 1 }, 1400, function() {
+    $el.animate({
+      opacity: 1
+    }, 1400, function() {
       /**
        * Do not forget to call .done() as soon your transition is finished!
        * .done() will automatically remove from the DOM the old Container
@@ -61,25 +68,27 @@ Barba.Pjax.getTransition = function() {
   return FadeTransition;
 };
 
+
+
+
+
 Barba.Dispatcher.on('newPageReady', function() {
   $('.link-btn').on('click', function() {
     $('.menu-toggle').toggleClass('open');
   });
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-  Barba.Dispatcher.on('newPageReady', function() {
 
-    var anim = bodymovin.loadAnimation({
-        container: document.getElementById('lottie'),
-        renderer: 'svg',
-        loop: true,
-        autoplay: true,
-        path: 'data.json',
-        rendererSettings: {
-          progressiveLoad: true,
-        }
-      }),
-      anim = bodymovin.setQuality(1);
-  });
+Barba.Dispatcher.on('newPageReady', function() {
+  var anim = bodymovin.loadAnimation({
+      container: document.getElementById('lottie'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'data.json',
+      rendererSettings: {
+        progressiveLoad: true,
+      }
+    }),
+    anim = bodymovin.setQuality(1);
 });

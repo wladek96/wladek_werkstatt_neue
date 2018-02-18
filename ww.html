@@ -3,6 +3,20 @@
 
 <head>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114373883-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-114373883-1');
+  </script>
+
+
   <meta charset="utf-8">
 
   <title>Wladek Werkstatt: Resume</title>
@@ -14,18 +28,7 @@
   <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114216932-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-114216932-1');
-  </script>
   <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
@@ -49,8 +52,6 @@
   <link rel="stylesheet" href="https://s3.amazonaws.com/icomoon.io/114779/Socicon/style.css?u8vidh">
   <!-- <script src="img/Logo/player.js" charset="utf-8"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.13.0/bodymovin.min.js" charset="utf-8"></script>
-
-  <script src="js/barb.anim.js" charset="utf-8"></script>
 </head>
 
 <body>
@@ -77,10 +78,10 @@
         <span></span>
       </div>
       <ul class="nav-menu">
-        <li><a id="btn1" href="index.html" class="link-btn">Liakh Vladyslav</a></li>
-        <li><a id="btn2" href="ww.html" class="active-page link-btn">Wladek Werkstatt ™</a></li>
-        <li><a id="btn3" href="portfolio.html" class="link-btn">PORTFOLIO</a></li>
-        <li><a id="btn4" href="contacts.html" class="link-btn">CONTACTS</a></li>
+        <li><a id="btn1" href="index.html" class="link-btn scrollTopBtn">Liakh Vladyslav</a></li>
+        <li><a id="btn2" href="ww.html" class="active-page link-btn scrollTopBtn">Wladek Werkstatt ™</a></li>
+        <li><a id="btn3" href="portfolio.html" class="link-btn scrollTopBtn">PORTFOLIO</a></li>
+        <li><a id="btn4" href="contacts.html" class="link-btn scrollTopBtn">CONTACTS</a></li>
       </ul>
     </div>
 
@@ -88,21 +89,7 @@
   <div id="barba-wrapper">
     <div class="barba-container" data-namespace="home">
 
-      <!-- Menu -->
-      <div class="full-menu">
-        <div class="full-menu--middle">
 
-          <ul class="main-nav">
-            <li><a href="index.html" class="link-btn">Liakh Vladyslav</a></li>
-            <li><a class="active-page link-btn">Wladek Werkstatt ™</a></li>
-            <li><a href="portfolio.html" class="link-btn">PORTFOLIO</a></li>
-            <li><a href="contacts.html" class="link-btn">CONTACTS</a></li>
-          </ul>
-          <!-- /.main nav -->
-        </div>
-        <!-- /.full menu middle -->
-      </div>
-      <!-- /.full menu -->
       <!-- Separator line -->
 
       <div class="separator">
@@ -151,8 +138,8 @@
 
           </div>
           <div class="modo-cont">
-            <h3 class="tw main-modo">“I am   branding
-not branded brands”</h3>
+            <h3 class="tw main-modo">“ I am branding
+not branded brands* ”</h3>
           </div>
           <p class="fp annot-modo tw">*branded brands too</p>
           <div class="mg">
@@ -168,30 +155,31 @@ not branded brands”</h3>
         <!-- Section 3 -->
 
         <div class="brand-section-3">
-          <div class="xp-cont mg">
+          <div class="xp-cont">
 
             <!-- Separator line -->
 
-            <div class="separator-2">
+            <div class="separator-2 mg">
               <div class="hr-line wh"></div>
               <p class="topic tw">WW BRAND</p>
               <p class="page-count tw">03<b>/05</b></p>
             </div>
-            <h3 class="tw" style="margin-top: 5rem; ">
+            <div class="mockup">
+
+            </div>
+            <p class="fp annot-modo tw">*ww branding</p>
+            <h3 class="tw mg" style="margin-top: 5rem; ">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             </h3>
-            <p class="tw" style="margin-top: 1rem;">«Władek Werkstatt» ( π ) — is a personal digital design brand, founded in 2017 by Liakh Vladyslav.</p>
-            <p class="tw">My main goal — avant-garde design practices implementation for modern visual communication industry.</p>
+            <p class="tw mg" style="margin-top: 1rem;">«Władek Werkstatt» ( π ) — is a personal digital design brand, founded in 2017 by Liakh Vladyslav.</p>
+            <p class="tw mg">My main goal — avant-garde design practices implementation for modern visual communication industry.</p>
           </div>
-          <div class="mockup">
 
-          </div>
-          <p class="fp annot-modo tw">*ww branding</p>
         </div>
 
         <!-- Section 5 -->
 
-        <div class="xp-section-3">
+        <div class="cont-ww-section-5">
 
           <div class="xp-cont mg">
 
@@ -202,33 +190,35 @@ not branded brands”</h3>
               <p class="topic tw">LEARN MORE</p>
               <p class="page-count tw">05<b>/06</b></p>
             </div>
-            <div class="learn-more">
-              <div class="header tw">
-                <h2 class="sub-2">About<br>Wladek Werkstatt™</h2>
+            <div class="learn-wrap">
+              <div class="learn-more">
+                <div class="header tw">
+                  <h2 class="sub-2">About<br>Wladek Werkstatt™</h2>
 
-                <br>
-                <div class="more-btn-cont">
-                  <a href="ww.html" class="more-btn" role="button" target="blank">more</a>
+                  <br>
+                  <div class="more-btn-cont">
+                    <a href="ww.html" class="more-btn" role="button" target="blank">more</a>
+                  </div>
                 </div>
+                <div class="jobs-slash-2 wh"></div>
               </div>
-              <div class="jobs-slash-2 wh"></div>
-            </div>
-            <div class="learn-more">
-              <div class="header tw">
-                <h2 class="sub-2">About<br>projects done</h2>
+              <div class="learn-more">
+                <div class="header tw">
+                  <h2 class="sub-2">About<br>projects done</h2>
 
-                <br>
-                <div class="more-btn-cont">
-                  <a href="portfolio.html" class="more-btn" role="button" target="blank">more</a>
+                  <br>
+                  <div class="more-btn-cont">
+                    <a href="portfolio.html" class="more-btn" role="button" target="blank">more</a>
+                  </div>
                 </div>
+                <div class="jobs-slash-2 wh"></div>
               </div>
-              <div class="jobs-slash-2 wh"></div>
             </div>
           </div>
         </div>
         <!-- Section 6 -->
 
-        <div class="xp-section-3">
+        <div class="cont-ww-section-6">
 
           <div class="xp-cont mg">
 
@@ -239,20 +229,22 @@ not branded brands”</h3>
               <p class="topic tw">CONTACT ME</p>
               <p class="page-count tw">06<b>/06</b></p>
             </div>
-            <div class="contacts-cont">
-              <div class="contacts">
-                <p class="contacts-item tw"><b>Mail: </b></p><a href="mailto:wladek.werkstatt@gmail.com" class="contacts-item tw">wladek.werkstatt@<span style="font-size: 1.25rem; font-style: italic;">gmail.com</span></a><br>
-                <p class="contacts-item tw"><b>Phone #1: </b></p><a href="tel:+380967727596" class="contacts-item tw">+ 380 96 772 75 96</a><br>
-                <p class="contacts-item tw"><b>Phone #2: </b></p><a href="tel:+380991942740" class="contacts-item tw">+ 380 99 194 27 40</a>
+            <div class="learn-wrap">
+              <div class="contacts-cont">
+                <div class="contacts">
+                  <p class="contacts-item tw"><b>Mail: </b></p><a href="mailto:wladek.werkstatt@gmail.com" class="contacts-item tw">wladek.werkstatt@<span style="font-size: 1.25rem; font-style: italic;">gmail.com</span></a><br>
+                  <p class="contacts-item tw"><b>Phone #1: </b></p><a href="tel:+380967727596" class="contacts-item tw">+ 380 96 772 75 96</a><br>
+                  <p class="contacts-item tw"><b>Phone #2: </b></p><a href="tel:+380991942740" class="contacts-item tw">+ 380 99 194 27 40</a>
+                </div>
+                <div class="jobs-slash-3 wh"></div>
               </div>
-              <div class="jobs-slash-3 wh"></div>
-            </div>
-            <div class="contacts-cont">
-              <a target="_blank" href="https://www.linkedin.com/in/wladekwerkstatt" class="socicon socicon-linkedin"></a>
-              <a target="_blank" href="https://www.behance.net/wlodzislaw3516" class="socicon socicon-behance"></a>
-              <a target="_blank" href="tg://resolve?domain=wladekwerkstatt" class="socicon socicon-telegram"></a>
-              <a target="_blank" href="skype:live:wlodzislaw.lw" class="socicon socicon-skype"></a>
-              <a target="_blank" href="https://www.instagram.com/lyakh.vladislav" class="socicon socicon-instagram"></a>
+              <div class="contacts-cont">
+                <a target="_blank" href="https://www.linkedin.com/in/wladekwerkstatt" class="socicon socicon-linkedin"></a>
+                <a target="_blank" href="https://www.behance.net/wlodzislaw3516" class="socicon socicon-behance"></a>
+                <a target="_blank" href="tg://resolve?domain=wladekwerkstatt" class="socicon socicon-telegram"></a>
+                <a target="_blank" href="skype:live:wlodzislaw.lw" class="socicon socicon-skype"></a>
+                <a target="_blank" href="https://www.instagram.com/lyakh.vladislav" class="socicon socicon-instagram"></a>
+              </div>
             </div>
             <p class="copyright">© 2018 Liakh Vladyslav. Some rights reserved.</p>
           </div>
@@ -260,7 +252,21 @@ not branded brands”</h3>
 
 
       </div>
+      <!-- Menu -->
+      <div class="full-menu">
+        <div class="full-menu--middle">
 
+          <ul class="main-nav">
+            <li><a href="index.html" class="link-btn scrollTopBtn">Liakh Vladyslav</a></li>
+            <li><a class="active-page link-btn scrollTopBtn">Wladek Werkstatt ™</a></li>
+            <li><a href="portfolio.html" class="link-btn scrollTopBtn">PORTFOLIO</a></li>
+            <li><a href="contacts.html" class="link-btn scrollTopBtn">CONTACTS</a></li>
+          </ul>
+          <!-- /.main nav -->
+        </div>
+        <!-- /.full menu middle -->
+      </div>
+      <!-- /.full menu -->
     </div>
   </div>
 
@@ -269,17 +275,15 @@ not branded brands”</h3>
 <link rel="stylesheet" href="/css/animations.css">
 <link rel="stylesheet" href="/css/nav.css">
 <script src="js/nav-btn.js" charset="utf-8"></script>
-<!-- <script src="js/barba.some.js" charset="utf-8"></script> -->
-<script type="text/javascript">
-  Barba.Pjax.start();
-</script>
+<script src="js/barba.some.js" charset="utf-8"></script>
+<script src="js/barb.anim.js" charset="utf-8"></script>
 <!-- <script type="text/javascript">
   Barba.Pjax.getTransition = function() {
     return HideShowTransition;
   };
 </script> -->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.1/TweenMax.min.js"></script> -->
-<!-- <script type="text/javascript">
+<script type="text/javascript">
   var anim = bodymovin.loadAnimation({
     container: document.getElementById('lottie'),
     renderer: 'svg',
@@ -296,6 +300,6 @@ not branded brands”</h3>
       }
     })
   });
-</script> -->
+</script>
 
 </html>

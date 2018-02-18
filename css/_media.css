@@ -89,7 +89,7 @@
     margin-left: 3rem;
     margin-right: 9rem;
     position: relative;
-    top: 12.5vh; }
+    top: 13rem; }
   .logo {
     top: 15vh; }
   .me-section-1 {
@@ -276,6 +276,36 @@
         width: 105rem;
         background-size: cover;
         background-position: -5rem 0; }
+    :root .modo-cont {
+      width: 100vw;
+      height: 70vh; }
+    :root .main-modo {
+      grid-column: 1 / 2;
+      font-size: 7rem;
+      left: 10vw;
+      width: 30vw; }
+    :root .mockup {
+      height: 50vh;
+      width: 100vw; }
+    :root .learn-wrap {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+        justify-content-align-items: center;
+        justify-content-flex-direction: row; }
+    :root .learn-more {
+      width: 45vw; }
+    :root .contacts-cont {
+      width: 45vw; }
+    :root .cont-ww-section-5 {
+      margin-top: 8rem; }
+    :root .cont-ww-section-6 {
+      margin-top: 8rem; }
+    :root .annot-modo {
+      margin-left: 10vw; }
     :root .tr-right {
       top: -200rem; } }
 
