@@ -95,8 +95,9 @@ Barba.Dispatcher.on('newPageReady', function() {
 
 Barba.Dispatcher.on('transitionCompleted', function() {
   AOS.init({
-    offset: 300,
-    duration: 700,
+    offset: 0,
+    duration: 400,
     easing: 'ease-in-sine',
+    disable: window.innerWidth > 768,
   });
 });

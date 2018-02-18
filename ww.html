@@ -23,8 +23,47 @@
   <meta name="description" content="">
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <style media="screen">
+    .js-loading *,
+    .js-loading *:before,
+    .js-loading *:after {
+      animation-play-state: paused !important;
+    }
 
-  <meta name="theme-color" content="#040404" />
+    .loading {
+      z-index: 200;
+      position: fixed;
+      margin: auto;
+      align-items: center;
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+      background-image: url(img/SMPTE_Color_Bars.svg);
+      background-size: cover;
+      background-position: center;
+      background-color: #040404;
+    }
+
+    .sb {
+      position: relative;
+      margin: auto;
+      align-content: center;
+      background-color: #040404;
+      color: white;
+      text-align: center;
+    }
+
+    .js-loading .loading {
+      display: flex;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(window).on('load', function() {
+      var $preloader = $('.loading');
+      $preloader.delay(1000).fadeOut('slow');
+    });
+  </script>
   <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -43,10 +82,9 @@
   <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
   <link rel="manifest" href="favicons/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileColor" content="#040404">
   <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <meta name="theme-color" content="#040404">
   <script src="js/barba.min.js" charset="utf-8"></script>
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="https://s3.amazonaws.com/icomoon.io/114779/Socicon/style.css?u8vidh">
@@ -57,17 +95,10 @@
 </head>
 
 <body>
-  <script type="text/javascript">
-    document.body.classList.add('js-loading');
-    window.addEventListener("load", showPage);
-
-    function showPage() {
-      document.body.classList.remove('js-loading');
-    }
-  </script>
   <div class="loading">
     <p class="sb">PLEASE STAND BY</p>
   </div>
+
   <header class="navbar">
     <div class="navbody">
       <a href="ww.html" class="mnu-logo"><img src="img/icons/WW_logo_white_full.svg" alt=""></a>
@@ -122,7 +153,7 @@
         <path class="st1" d="M32.3 34.5l-8.3 11-8.3-11 1.6-1.3 5.7 7.6V22.3h2v18.7l5.7-7.6z" id="l2"/>
       </svg>
             </div>
-            <div class="dwnl-txt tw">PDF<br>402 Kb</div>
+            <div class="dwnl-txt tw">PDF<br>1. 2 Mb</div>
             <div class="dwnl-slash"></div>
           </div>
         </div>
@@ -132,19 +163,19 @@
           <div class="xp-cont mg">
             <!-- Separator line -->
 
-            <div class="separator-2">
+            <div data-aos="fade-right" class="separator-2">
               <div class="hr-line wh"></div>
               <p class="topic tw">MODO</p>
               <p class="page-count tw">02<b>/05</b></p>
             </div>
 
           </div>
-          <div data-aos="zoom-out" class="modo-cont">
-            <h3 class="tw main-modo">“ I am branding
+          <div data-aos="zoom-in" class="modo-cont">
+            <h3 data-aos="fade-right" class="tw main-modo">“ I am branding
 not branded brands* ”</h3>
           </div>
           <p class="fp annot-modo tw">*branded brands too</p>
-          <div class="mg body-txt">
+          <div data-aos="fade-right" class="mg body-txt">
             <h2 class="tw" style="margin-bottom: 0;">My main goal —</h2>
             <h3 class="tw" style="margin-top: 2rem; text-indent: -1.25em; line-height: 2;">
               — avant-garde design practices implementation <br> for <mark> modern visual communication industry...</mark>
@@ -160,16 +191,16 @@ not branded brands* ”</h3>
 
             <!-- Separator line -->
 
-            <div class="separator-2 mg">
+            <div data-aos="fade-right" class="separator-2 mg">
               <div class="hr-line wh"></div>
               <p class="topic tw">WW BRAND</p>
               <p class="page-count tw">03<b>/05</b></p>
             </div>
-            <div data-aos="zoom-out" class="mockup">
+            <div data-aos="zoom-in" class="mockup">
 
             </div>
             <p class="fp annot-modo tw">*ww branding</p>
-            <div class="body-txt">
+            <div data-aos="fade-right" class="body-txt">
 
               <h3 class="tw mg" style="margin-top: 5rem; ">
               ... and I don't confine myself to one style!
@@ -189,12 +220,12 @@ not branded brands* ”</h3>
 
             <!-- Separator line -->
 
-            <div class="separator-2">
+            <div data-aos="fade-right" class="separator-2">
               <div class="hr-line wh"></div>
               <p class="topic tw">LEARN MORE</p>
               <p class="page-count tw">05<b>/06</b></p>
             </div>
-            <div class="learn-wrap">
+            <div data-aos="fade-right" class="learn-wrap">
               <div class="learn-more">
                 <div class="header tw">
                   <h2 class="sub-2">About<br>Wladek Werkstatt™</h2>
@@ -228,12 +259,12 @@ not branded brands* ”</h3>
 
             <!-- Separator line -->
 
-            <div class="separator-2">
+            <div data-aos="fade-right" class="separator-2">
               <div class="hr-line wh"></div>
               <p class="topic tw">CONTACT ME</p>
               <p class="page-count tw">06<b>/06</b></p>
             </div>
-            <div class="learn-wrap">
+            <div data-aos="fade-right" class="learn-wrap">
               <div class="contacts-cont">
                 <div class="contacts">
                   <p class="contacts-item tw"><b>Mail: </b></p><a href="mailto:wladek.werkstatt@gmail.com" class="contacts-item tw">wladek.werkstatt@<span style="font-size: 1.25rem; font-style: italic;">gmail.com</span></a><br>
@@ -281,13 +312,14 @@ not branded brands* ”</h3>
 <script src="js/nav-btn.js" charset="utf-8"></script>
 <script src="js/barba.some.js" charset="utf-8"></script>
 <script src="js/barb.anim.js" charset="utf-8"></script>
-<!-- <script>
+<script>
   AOS.init({
-    offset: 300,
-    duration: 700,
+    offset: 0,
+    duration: 400,
     easing: 'ease-in-sine',
+    disable: window.innerWidth > 768,
   });
-</script> -->
+</script>
 <!-- <script type="text/javascript">
   Barba.Pjax.getTransition = function() {
     return HideShowTransition;

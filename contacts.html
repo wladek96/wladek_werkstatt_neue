@@ -23,8 +23,47 @@
   <meta name="description" content="">
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <style media="screen">
+    .js-loading *,
+    .js-loading *:before,
+    .js-loading *:after {
+      animation-play-state: paused !important;
+    }
 
-  <meta name="theme-color" content="#040404" />
+    .loading {
+      z-index: 200;
+      position: fixed;
+      margin: auto;
+      align-items: center;
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+      background-image: url(img/SMPTE_Color_Bars.svg);
+      background-size: cover;
+      background-position: center;
+      background-color: #040404;
+    }
+
+    .sb {
+      position: relative;
+      margin: auto;
+      align-content: center;
+      background-color: #040404;
+      color: white;
+      text-align: center;
+    }
+
+    .js-loading .loading {
+      display: flex;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(window).on('load', function() {
+      var $preloader = $('.loading');
+      $preloader.delay(1000).fadeOut('slow');
+    });
+  </script>
   <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -42,10 +81,10 @@
   <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
   <link rel="manifest" href="favicons/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileColor" content="#040404">
   <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <meta name="theme-color" content="#040404">
+
   <script src="js/barba.min.js" charset="utf-8"></script>
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="https://s3.amazonaws.com/icomoon.io/114779/Socicon/style.css?u8vidh">
@@ -56,17 +95,10 @@
 </head>
 
 <body>
-  <script type="text/javascript">
-    document.body.classList.add('js-loading');
-    window.addEventListener("load", showPage);
-
-    function showPage() {
-      document.body.classList.remove('js-loading');
-    }
-  </script>
   <div class="loading">
     <p class="sb">PLEASE STAND BY</p>
   </div>
+
   <header class="navbar">
     <div class="navbody">
       <a href="ww.html" class="mnu-logo"><img src="img/icons/WW_logo_white_full.svg" alt=""></a>

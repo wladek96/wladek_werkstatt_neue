@@ -533,40 +533,6 @@ p {
 li {
   list-style-type: none; }
 
-.js-loading *,
-.js-loading *:before,
-.js-loading *:after {
-  -webkit-animation-play-state: paused !important;
-  animation-play-state: paused !important; }
-
-.loading {
-  z-index: 100;
-  position: absolute;
-  margin: auto;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: none;
-  width: 100vw;
-  height: 100vh;
-  background-image: url(../img/SMPTE_Color_Bars.svg);
-  background-size: cover;
-  background-position: center; }
-
-.sb {
-  position: relative;
-  margin: auto;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  background-color: #040404;
-  color: white;
-  text-align: center; }
-
-.js-loading .loading {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
 mark {
   background-color: #FF003A;
   font-weight: 700; }
@@ -1671,9 +1637,9 @@ body {
     :root .contacts-cont {
       width: 35vw; }
     :root .cont-ww-section-5 {
-      margin-top: 12rem; }
+      margin-top: 8rem; }
     :root .cont-ww-section-6 {
-      margin-top: 12rem; }
+      margin-top: 8rem; }
     :root .annot-modo {
       margin-left: 10vw; }
     :root .tr-right {

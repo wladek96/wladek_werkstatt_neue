@@ -25,7 +25,47 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<meta name="theme-color" content="#040404" />
+	<style media="screen">
+		.js-loading *,
+		.js-loading *:before,
+		.js-loading *:after {
+			animation-play-state: paused !important;
+		}
+
+		.loading {
+			z-index: 200;
+			position: fixed;
+			margin: auto;
+			align-items: center;
+			display: flex;
+			width: 100vw;
+			height: 100vh;
+			background-image: url(img/SMPTE_Color_Bars.svg);
+			background-size: cover;
+			background-position: center;
+			background-color: #040404;
+		}
+
+		.sb {
+			position: relative;
+			margin: auto;
+			align-content: center;
+			background-color: #040404;
+			color: white;
+			text-align: center;
+		}
+
+		.js-loading .loading {
+			display: flex;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(window).on('load', function() {
+			var $preloader = $('.loading');
+			$preloader.delay(1000).fadeOut('slow');
+		});
+	</script>
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -44,10 +84,10 @@
 	<link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
 	<link rel="manifest" href="favicons/manifest.json">
-	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileColor" content="#040404">
 	<meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
-	<meta name="theme-color" content="#ffffff">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<meta name="theme-color" content="#040404">
+
 	<script src="js/barba.min.js" charset="utf-8"></script>
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="https://s3.amazonaws.com/icomoon.io/114779/Socicon/style.css?u8vidh">
@@ -58,17 +98,11 @@
 </head>
 
 <body>
-	<script type="text/javascript">
-		document.body.classList.add('js-loading');
-		window.addEventListener("load", showPage);
 
-		function showPage() {
-			document.body.classList.remove('js-loading');
-		}
-	</script>
 	<div class="loading">
 		<p class="sb">PLEASE STAND BY</p>
 	</div>
+
 	<header class="navbar">
 		<div class="navbody">
 			<a href="ww.html" class="mnu-logo"><img src="img/icons/WW_logo_white_full.svg" alt=""></a>
@@ -95,7 +129,7 @@
 
 			<!-- Separator line -->
 
-			<div class="separator-ind">
+			<div data-aos="zoom-in" class="separator-ind">
 				<div class="hr-line wh"></div>
 				<p class="topic tw">ABOUT</p>
 				<p class="page-count tw">01<b>/06</b></p>
@@ -103,8 +137,8 @@
 
 			<!-- My Photo -->
 
-			<div class="me-photo"></div>
-			<div class="me-section-1 grid">
+			<div data-aos="zoom-in" class="me-photo"></div>
+			<div data-aos="zoom-in" class="me-section-1 grid">
 
 				<div class="mg dwnl-cred right tr-right">
 					<div class="dwnl-box">
@@ -117,7 +151,7 @@
 				  <path class="st1" d="M32.3 34.5l-8.3 11-8.3-11 1.6-1.3 5.7 7.6V22.3h2v18.7l5.7-7.6z" id="l2"/>
 				</svg>
 						</div>
-						<div class="dwnl-txt tw">PDF<br>402 Kb</div>
+						<div class="dwnl-txt tw">PDF<br>1. 2 Mb</div>
 						<div class="dwnl-slash"></div>
 					</div>
 					<div class="credits">
@@ -169,7 +203,7 @@
 
 				<!-- Section 3 -->
 
-				<div class="xp-section-3">
+				<div data-aos="zoom-in" class="xp-section-3">
 
 					<div class="xp-cont mg">
 
@@ -180,7 +214,7 @@
 							<p class="topic tw">EXPERIENCE</p>
 							<p class="page-count tw">03<b>/06</b></p>
 						</div>
-						<div class="last-jobs">
+						<div data-aos="zoom-in" class="last-jobs">
 							<div class="information tw">
 								<h3 class="sub">BIM Engineer</h3>
 								<br>
@@ -196,7 +230,7 @@
 
 						<div class="separ wh"></div>
 
-						<div class="last-jobs">
+						<div data-aos="zoom-in" class="last-jobs">
 							<div class="information tw">
 								<h3 class="sub">Motion Graphic Artist</h3>
 								<br>
@@ -214,7 +248,7 @@
 
 						<div class="separ wh"></div>
 
-						<div class="last-jobs">
+						<div data-aos="zoom-in" class="last-jobs">
 							<div class="information tw">
 								<h3 class="sub">Web Graphic Designer</h3>
 								<br>
@@ -233,7 +267,7 @@
 
 						<div class="separ wh"></div>
 
-						<div class="last-jobs">
+						<div data-aos="zoom-in" class="last-jobs">
 							<div class="information tw">
 								<h3 class="sub">Freelance Designer</h3>
 								<br>
@@ -255,7 +289,7 @@
 
 				<!-- Section 4 -->
 
-				<div class="skills-section-4 right tr-right">
+				<div data-aos="zoom-in" class="skills-section-4 right tr-right">
 					<div class="about-cont mg">
 						<!-- Separator line -->
 
@@ -362,7 +396,7 @@
 				</div>
 				<!-- Section 5 -->
 
-				<div class="cont-section-5 right tr-right">
+				<div data-aos="zoom-in" class="cont-section-5 right tr-right">
 
 					<div class="xp-cont mg">
 
@@ -399,7 +433,7 @@
 				</div>
 				<!-- Section 6 -->
 
-				<div class="cont-section-6">
+				<div data-aos="zoom-in" class="cont-section-6">
 
 					<div class="xp-cont mg">
 
@@ -458,9 +492,10 @@
 <script src="js/barb.anim.js" charset="utf-8"></script>
 <script>
 	AOS.init({
-		offset: 300,
-		duration: 700,
+		offset: 0,
+		duration: 400,
 		easing: 'ease-in-sine',
+		disable: window.innerWidth > 768,
 	});
 </script>
 <!-- <script type="text/javascript">
