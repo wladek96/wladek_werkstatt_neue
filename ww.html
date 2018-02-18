@@ -52,6 +52,8 @@
   <link rel="stylesheet" href="https://s3.amazonaws.com/icomoon.io/114779/Socicon/style.css?u8vidh">
   <!-- <script src="img/Logo/player.js" charset="utf-8"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.13.0/bodymovin.min.js" charset="utf-8"></script>
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -107,8 +109,8 @@
       <div class="ww-section-1 grid">
         <div class="mg main-dwnl">
           <div class="text-par">
-            <p class="tw" style="margin-top: 5rem;">«Władek Werkstatt» ( π ) — is a personal digital design brand, founded in 2017 by Liakh Vladyslav.</p>
-            <p class="tw">My main goal — avant-garde design practices implementation for modern visual communication industry.</p>
+            <p class="tw" style="margin-top: 5rem; text-indent: -0.6em;">«Władek Werkstatt» ( π ) — is a personal digital design brand, founded in 2017 by Liakh Vladyslav.</p>
+            <!-- <p class="tw">My main goal — avant-garde design practices implementation for modern visual communication industry.</p> -->
           </div>
           <div class="dwnl-box-2">
             <a href="Liakh_Vladyslav_Resume_Design.pdf" class="dwnl-btn" role="button" target="blank" download>download resume</a>
@@ -137,18 +139,17 @@
             </div>
 
           </div>
-          <div class="modo-cont">
+          <div data-aos="zoom-out" class="modo-cont">
             <h3 class="tw main-modo">“ I am branding
 not branded brands* ”</h3>
           </div>
           <p class="fp annot-modo tw">*branded brands too</p>
-          <div class="mg">
-            <h2 class="tw" style="margin-bottom: 0;">Lorem ipsum dolor sit amet</h2>
-            <h3 class="tw" style="margin-top: 2rem; ">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          <div class="mg body-txt">
+            <h2 class="tw" style="margin-bottom: 0;">My main goal —</h2>
+            <h3 class="tw" style="margin-top: 2rem; text-indent: -1.25em; line-height: 2;">
+              — avant-garde design practices implementation <br> for <mark> modern visual communication industry...</mark>
             </h3>
-            <p class="tw" style="margin-top: 1rem;">«Władek Werkstatt» ( π ) — is a personal digital design brand, founded in 2017 by Liakh Vladyslav.</p>
-            <p class="tw">My main goal — avant-garde design practices implementation for modern visual communication industry.</p>
+            <p class="tw" style="margin-top: 1rem;"></p>
           </div>
         </div>
 
@@ -164,15 +165,18 @@ not branded brands* ”</h3>
               <p class="topic tw">WW BRAND</p>
               <p class="page-count tw">03<b>/05</b></p>
             </div>
-            <div class="mockup">
+            <div data-aos="zoom-out" class="mockup">
 
             </div>
             <p class="fp annot-modo tw">*ww branding</p>
-            <h3 class="tw mg" style="margin-top: 5rem; ">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            <div class="body-txt">
+
+              <h3 class="tw mg" style="margin-top: 5rem; ">
+              ... and I don't confine myself to one style!
             </h3>
-            <p class="tw mg" style="margin-top: 1rem;">«Władek Werkstatt» ( π ) — is a personal digital design brand, founded in 2017 by Liakh Vladyslav.</p>
-            <p class="tw mg">My main goal — avant-garde design practices implementation for modern visual communication industry.</p>
+              <p class="tw mg" style="margin-top: 1rem;">I prefer mixing, modernizing and injecting one to another.</p>
+              <p class="tw mg">Dealing with <mark> Motion graphics</mark>, <mark>UI/UX design</mark>, <mark>Web and Branding</mark>. <br> My main advantages are: speed and quality...</p>
+            </div>
           </div>
 
         </div>
@@ -277,6 +281,13 @@ not branded brands* ”</h3>
 <script src="js/nav-btn.js" charset="utf-8"></script>
 <script src="js/barba.some.js" charset="utf-8"></script>
 <script src="js/barb.anim.js" charset="utf-8"></script>
+<!-- <script>
+  AOS.init({
+    offset: 300,
+    duration: 700,
+    easing: 'ease-in-sine',
+  });
+</script> -->
 <!-- <script type="text/javascript">
   Barba.Pjax.getTransition = function() {
     return HideShowTransition;

@@ -44,7 +44,7 @@ var FadeTransition = Barba.BaseTransition.extend({
 
     $el.animate({
       opacity: 1
-    }, 1400, function() {
+    }, 1000, function() {
       /**
        * Do not forget to call .done() as soon your transition is finished!
        * .done() will automatically remove from the DOM the old Container
@@ -91,4 +91,12 @@ Barba.Dispatcher.on('newPageReady', function() {
       }
     }),
     anim = bodymovin.setQuality(1);
+});
+
+Barba.Dispatcher.on('transitionCompleted', function() {
+  AOS.init({
+    offset: 300,
+    duration: 700,
+    easing: 'ease-in-sine',
+  });
 });

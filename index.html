@@ -53,6 +53,8 @@
 	<link rel="stylesheet" href="https://s3.amazonaws.com/icomoon.io/114779/Socicon/style.css?u8vidh">
 	<!-- <script src="img/Logo/player.js" charset="utf-8"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.13.0/bodymovin.min.js" charset="utf-8"></script>
+	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+	<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -141,12 +143,12 @@
 							<p class="page-count tb">02<b>/06</b></p>
 						</div>
 						<h3 class="about-head">
-							I am a 21 y.o digital designer ...
+							I am a 21 y.o <mark>full-stack digital designer ...</mark>
 						</h3>
 						<p>...who can handle both — web/ui/ux and motion design.</p>
 						<p>I’m looking for a company where I will develop my skills, working on interesting projects in a team of true professionals. </p>
 						<p>I believe it will be a good deal for you to work with me!</p>
-						<div class="skills-ls">
+						<div class="skills-ls" style="margin-top: 5rem;">
 							<div class="border-slash bl"></div>
 							<p class="skill"><b>80</b>/100</p>
 							<p class="skill"><b>50</b>/100</p>
@@ -265,7 +267,7 @@
 
 						<p class="fp skill-sep">
 							Software</p>
-						<div class="skills-ls">
+						<div data-aos="zoom-out" class="skills-ls">
 							<div class="border-slash-2 bl"></div>
 							<p class="skill s1"></p>
 							<p class="skill s2"></p>
@@ -282,7 +284,7 @@
 							<div class="border-slash wh" style="visibility: hidden;"></div>
 
 						</div>
-						<div class="skills-ls">
+						<div data-aos="zoom-out" class="skills-ls">
 							<div class="border-slash wh" style="visibility: hidden;"></div>
 							<p class="skill s5"></p>
 							<p class="skill s6"></p>
@@ -301,7 +303,7 @@
 						</div>
 						<p class="fp skill-sep">
 							Technologies</p>
-						<div class="skills-ls">
+						<div data-aos="zoom-out" class="skills-ls">
 							<div class="border-slash-2 bl"></div>
 							<p class="skill s9"></p>
 							<p class="skill s10"></p>
@@ -320,7 +322,7 @@
 						</div>
 						<p class="fp skill-sep">
 							Guidelines</p>
-						<div class="skills-ls">
+						<div data-aos="zoom-out" class="skills-ls">
 							<div class="border-slash-2 bl"></div>
 							<p class="skill s13"></p>
 							<p class="skill s14"></p>
@@ -339,7 +341,7 @@
 						</div>
 						<p class="fp skill-sep">
 							Languages</p>
-						<div class="skills-ls">
+						<div data-aos="zoom-out" class="skills-ls">
 							<div class="border-slash-2 bl"></div>
 							<p class="skill s16"></p>
 							<p class="skill s17"></p>
@@ -454,6 +456,13 @@
 	Barba.Pjax.start();
 </script> -->
 <script src="js/barb.anim.js" charset="utf-8"></script>
+<script>
+	AOS.init({
+		offset: 300,
+		duration: 700,
+		easing: 'ease-in-sine',
+	});
+</script>
 <!-- <script type="text/javascript">
 	Barba.Pjax.getTransition = function() {
 		return HideShowTransition;

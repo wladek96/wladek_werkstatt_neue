@@ -167,6 +167,10 @@
 @media only screen and (min-width: 1024px) {
   :root {
     font-size: 10px; }
+    :root .body-txt {
+      margin-left: 10vw;
+      margin-top: 20rem;
+      margin-bottom: 20rem; }
     :root .mnu-btn {
       display: none; }
     :root .navbar {
@@ -254,7 +258,7 @@
       grid-column: 1;
       grid-row: 4 / 8; }
     :root .cont-section-6 {
-      grid-column: 1 / 2;
+      grid-column: 1;
       grid-row: 10; }
     :root .tr-right {
       top: -210rem; }
@@ -297,9 +301,9 @@
         justify-content-align-items: center;
         justify-content-flex-direction: row; }
     :root .learn-more {
-      width: 45vw; }
+      width: 35vw; }
     :root .contacts-cont {
-      width: 45vw; }
+      width: 35vw; }
     :root .cont-ww-section-5 {
       margin-top: 8rem; }
     :root .cont-ww-section-6 {
