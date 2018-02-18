@@ -102,7 +102,7 @@
 		margin-left: 3rem
 		margin-right: 9rem
 		position: relative
-		top: 10vh
+		top: 12.5vh
 
 	.logo
 		top: 15vh
@@ -165,6 +165,16 @@
 	.tr-right
 		position: relative
 		top: -235vh
+
+	.map
+		width: 125vw
+
+	.map-section-1
+		top: 20rem
+		grid-template-columns: 1
+
+	.map-one
+		width: 94vw
 
 
 /* Medium Devices, Desktops */
@@ -264,7 +274,32 @@
 			grid-row: 10
 
 		.tr-right
-			top: -235vh
+			top: -210rem
+
+		.map
+			width: 100vw
+			left: 0
+			top: -5vh
+
+@media only screen and (min-width : 1600px)
+	\:root
+		font-size: 11px
+
+		.me-photo
+			height: 105rem
+			width: 105rem
+			background-size: cover
+			background-position: -5rem 0
+			&::after
+				height: 105rem
+				width: 105rem
+				background-size: cover
+				background-position: -5rem 0
+
+
+		.tr-right
+			top: -200rem
+
 
 @media only screen and (min-width : 2560px)
 	\:root

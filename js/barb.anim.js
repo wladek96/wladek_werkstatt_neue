@@ -37,7 +37,7 @@ var FadeTransition = Barba.BaseTransition.extend({
       opacity : 0
     });
 
-    $el.animate({ opacity: 1 }, 400, function() {
+    $el.animate({ opacity: 1 }, 1400, function() {
       /**
        * Do not forget to call .done() as soon your transition is finished!
        * .done() will automatically remove from the DOM the old Container
@@ -60,3 +60,26 @@ Barba.Pjax.getTransition = function() {
 
   return FadeTransition;
 };
+
+Barba.Dispatcher.on('newPageReady', function() {
+  $('.link-btn').on('click', function() {
+    $('.menu-toggle').toggleClass('open');
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  Barba.Dispatcher.on('newPageReady', function() {
+
+    var anim = bodymovin.loadAnimation({
+        container: document.getElementById('lottie'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'data.json',
+        rendererSettings: {
+          progressiveLoad: true,
+        }
+      }),
+      anim = bodymovin.setQuality(1);
+  });
+});

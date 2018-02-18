@@ -446,7 +446,16 @@
 <link rel="stylesheet" href="/css/animations.css">
 <link rel="stylesheet" href="/css/nav.css">
 <script src="js/nav-btn.js" charset="utf-8"></script>
-<script src="js/barba.some.js" charset="utf-8"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.1/TweenMax.min.js"></script>
+<!-- <script src="js/barba.some.js" charset="utf-8"></script> -->
+<script type="text/javascript">
+	Barba.Pjax.start();
+</script>
+<script src="js/barb.anim.js" charset="utf-8"></script>
+<!-- <script type="text/javascript">
+	Barba.Pjax.getTransition = function() {
+		return HideShowTransition;
+	};
+</script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.1/TweenMax.min.js"></script> -->
 
 </html>

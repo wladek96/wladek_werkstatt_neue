@@ -49,6 +49,8 @@
   <link rel="stylesheet" href="https://s3.amazonaws.com/icomoon.io/114779/Socicon/style.css?u8vidh">
   <!-- <script src="img/Logo/player.js" charset="utf-8"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.13.0/bodymovin.min.js" charset="utf-8"></script>
+
+  <script src="js/barb.anim.js" charset="utf-8"></script>
 </head>
 
 <body>
@@ -267,7 +269,33 @@ not branded brands”</h3>
 <link rel="stylesheet" href="/css/animations.css">
 <link rel="stylesheet" href="/css/nav.css">
 <script src="js/nav-btn.js" charset="utf-8"></script>
-<script src="js/barba.some.js" charset="utf-8"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.1/TweenMax.min.js"></script>
+<!-- <script src="js/barba.some.js" charset="utf-8"></script> -->
+<script type="text/javascript">
+  Barba.Pjax.start();
+</script>
+<!-- <script type="text/javascript">
+  Barba.Pjax.getTransition = function() {
+    return HideShowTransition;
+  };
+</script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.1/TweenMax.min.js"></script> -->
+<!-- <script type="text/javascript">
+  var anim = bodymovin.loadAnimation({
+    container: document.getElementById('lottie'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'data.json'
+  })
+
+  $(document).ready(function() {
+    return new Promise(function(resolve) {
+      anim.start();
+      anim.onComplete = function() {
+        resolve(true);
+      }
+    })
+  });
+</script> -->
 
 </html>

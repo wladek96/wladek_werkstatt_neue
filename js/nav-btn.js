@@ -38,23 +38,6 @@ $('#btn4').click(function(e) {
   $('#btn1').removeClass('active-page').delay(800);
 })
 
-var anim = bodymovin.loadAnimation({
-  container: document.getElementById('lottie'),
-  renderer: 'svg',
-  loop: true,
-  autoplay: true,
-  path: 'data.json'
-})
-
-$(document).ready(function() {
-  return new Promise(function(resolve) {
-    anim.start();
-    anim.onComplete = function() {
-      resolve(true);
-    }
-  })
-});
-
 $(document).ready(function() {
     $(window).scroll(function() {
       if (window.matchMedia('(min-width: 768px)').matches) {

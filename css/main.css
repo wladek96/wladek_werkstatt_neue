@@ -456,6 +456,9 @@ template {
 html, body {
   height: 100%; }
 
+body::-webkit-scrollbar {
+  width: 1em; }
+
 body {
   min-width: 320px;
   position: relative;
@@ -463,7 +466,9 @@ body {
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
   opacity: 1;
-  scroll-behavior: smooth; }
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .img-responsive {
   display: block;
@@ -1435,7 +1440,7 @@ body {
     margin-left: 3rem;
     margin-right: 9rem;
     position: relative;
-    top: 10vh; }
+    top: 12.5vh; }
   .logo {
     top: 15vh; }
   .me-section-1 {
@@ -1500,7 +1505,14 @@ body {
     margin-left: 17.5rem; }
   .tr-right {
     position: relative;
-    top: -235vh; } }
+    top: -235vh; }
+  .map {
+    width: 125vw; }
+  .map-section-1 {
+    top: 20rem;
+    grid-template-columns: 1; }
+  .map-one {
+    width: 94vw; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 1024px) {
@@ -1596,7 +1608,27 @@ body {
       grid-column: 1 / 2;
       grid-row: 10; }
     :root .tr-right {
-      top: -235vh; } }
+      top: -210rem; }
+    :root .map {
+      width: 100vw;
+      left: 0;
+      top: -5vh; } }
+
+@media only screen and (min-width: 1600px) {
+  :root {
+    font-size: 11px; }
+    :root .me-photo {
+      height: 105rem;
+      width: 105rem;
+      background-size: cover;
+      background-position: -5rem 0; }
+      :root .me-photo::after {
+        height: 105rem;
+        width: 105rem;
+        background-size: cover;
+        background-position: -5rem 0; }
+    :root .tr-right {
+      top: -200rem; } }
 
 @media only screen and (min-width: 2560px) {
   :root {
