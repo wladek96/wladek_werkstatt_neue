@@ -19,13 +19,6 @@ $('.link-btn').on('click', function() {
     }, 800);
   });
 
-  $(scrollTop).tap(function(e) {
-    e.preventDefault();
-    $('html, body').animate({
-      scrollTop: 0
-    }, 800);
-  });
-
 $('#btn1').click(function(e) {
   e.preventDefault();
   $(this).toggleClass('active-page').delay(800);
