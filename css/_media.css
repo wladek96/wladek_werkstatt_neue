@@ -30,6 +30,8 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px) {
+  .xp-cont {
+    grid-template-columns: 1fr 1fr 1fr; }
   .me-photo {
     background-position: center; }
     .me-photo::after {
@@ -41,6 +43,18 @@
     font-size: 9px; }
   .grid {
     grid-template-columns: 1fr 1fr; }
+  .xp-cont {
+    grid-template-columns: 1fr 1fr 1fr; }
+  .portf-el {
+    height: 25rem; }
+  .el-bg {
+    height: 17rem; }
+  .el-info {
+    height: 8rem; }
+  .portf-fg {
+    height: 25rem; }
+  .portf-fg-bh {
+    height: 25rem; }
   .mg {
     margin: 0 5rem; }
   .mnu-logo {
@@ -167,6 +181,10 @@
 @media only screen and (min-width: 1024px) {
   :root {
     font-size: 10px; }
+    :root .xp-cont {
+      grid-template-columns: 1fr 1fr 1fr 1fr; }
+    :root .portf-wrap {
+      margin-top: 17rem; }
     :root .body-txt {
       margin-left: 10vw;
       margin-top: 20rem;
@@ -233,6 +251,8 @@
     :root .grid {
       grid-column-gap: 5rem;
       grid-template-columns: 1fr 1fr; }
+    :root .xp-cont {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr; }
     :root .nav-menu {
       width: 55vw; }
     :root .dwnl-cred {
@@ -270,6 +290,8 @@
 @media only screen and (min-width: 1600px) {
   :root {
     font-size: 11px; }
+    :root .xp-cont {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; }
     :root .me-photo {
       height: 105rem;
       width: 105rem;

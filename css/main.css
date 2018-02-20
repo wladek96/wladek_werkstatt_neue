@@ -1330,6 +1330,62 @@ body {
   background-size: 50%;
   background-repeat: no-repeat; }
 
+.xp-cont {
+  grid-row-gap: 5rem;
+  margin-top: 3rem; }
+
+.portf-el {
+  position: relative;
+  width: 100%;
+  height: 30rem;
+  outline: white 0.5rem solid;
+  text-decoration: none;
+  color: #040404; }
+
+.portf-fg {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 30rem;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../img/thumbs/youtube.svg);
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+  opacity: 0; }
+  .portf-fg:hover {
+    opacity: 1; }
+
+.portf-fg-bh {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 30rem;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../img/thumbs/behance.svg);
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  opacity: 0; }
+  .portf-fg-bh:hover {
+    opacity: 1; }
+
+.el-bg {
+  width: 100%;
+  height: 20rem;
+  background-position: center;
+  background-size: cover; }
+
+.el-info {
+  width: 100%;
+  height: 10rem;
+  background-color: white;
+  position: absolute;
+  padding-left: 2rem;
+  padding-top: 0.9rem; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -1362,6 +1418,8 @@ body {
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px) {
+  .xp-cont {
+    grid-template-columns: 1fr 1fr 1fr; }
   .me-photo {
     background-position: center; }
     .me-photo::after {
@@ -1373,6 +1431,18 @@ body {
     font-size: 9px; }
   .grid {
     grid-template-columns: 1fr 1fr; }
+  .xp-cont {
+    grid-template-columns: 1fr 1fr 1fr; }
+  .portf-el {
+    height: 25rem; }
+  .el-bg {
+    height: 17rem; }
+  .el-info {
+    height: 8rem; }
+  .portf-fg {
+    height: 25rem; }
+  .portf-fg-bh {
+    height: 25rem; }
   .mg {
     margin: 0 5rem; }
   .mnu-logo {
@@ -1499,6 +1569,10 @@ body {
 @media only screen and (min-width: 1024px) {
   :root {
     font-size: 10px; }
+    :root .xp-cont {
+      grid-template-columns: 1fr 1fr 1fr 1fr; }
+    :root .portf-wrap {
+      margin-top: 17rem; }
     :root .body-txt {
       margin-left: 10vw;
       margin-top: 20rem;
@@ -1565,6 +1639,8 @@ body {
     :root .grid {
       grid-column-gap: 5rem;
       grid-template-columns: 1fr 1fr; }
+    :root .xp-cont {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr; }
     :root .nav-menu {
       width: 55vw; }
     :root .dwnl-cred {
@@ -1602,6 +1678,8 @@ body {
 @media only screen and (min-width: 1600px) {
   :root {
     font-size: 11px; }
+    :root .xp-cont {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; }
     :root .me-photo {
       height: 105rem;
       width: 105rem;

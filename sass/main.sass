@@ -707,4 +707,62 @@ body
   background-size: 50%
   background-repeat: no-repeat
 
+// portfolio
+
+.xp-cont
+  grid-row-gap: 5rem
+  margin-top: 3rem
+
+.portf-el
+  position: relative
+  width: 100%
+  height: 30rem
+  outline: white 0.5rem solid
+  text-decoration: none
+  color: $main
+
+.portf-fg
+  z-index: 1
+  position: absolute
+  width: 100%
+  height: 30rem
+  background-position: center
+  background-size: cover
+  background-image: url(../img/thumbs/youtube.svg)
+  transition: all .4s
+  opacity: 0
+  &:hover
+    opacity: 1
+
+.portf-fg-bh
+  z-index: 1
+  position: absolute
+  width: 100%
+  height: 30rem
+  background-position: center
+  background-size: cover
+  background-image: url(../img/thumbs/behance.svg)
+  transition: all .2s
+  opacity: 0
+  &:hover
+    opacity: 1
+
+.el-bg
+  width: 100%
+  height: 20rem
+  background-position: center
+  background-size: cover
+
+
+
+.el-info
+  width: 100%
+  height: 10rem
+  background-color: white
+  position: absolute
+  padding-left: 2rem
+  padding-top: 0.9rem
+
+
+
 @import "media" // Всегда в конце

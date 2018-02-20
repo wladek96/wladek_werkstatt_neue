@@ -78,3 +78,15 @@
   .me-photo::after {
     -webkit-animation: 4s infinite 2s both flicker;
     animation: 4s infinite 2s both flicker; }
+
+.portf-wrap {
+  -webkit-animation: 4s ease both appear;
+  animation: 4s ease both appear; }
+
+.logo {
+  -webkit-animation: 4s ease both appear;
+  animation: 4s ease both appear; }
+
+.map {
+  -webkit-animation: 4s ease both appear;
+  animation: 4s ease both appear; }
